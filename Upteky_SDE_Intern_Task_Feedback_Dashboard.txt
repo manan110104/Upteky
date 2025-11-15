@@ -1,0 +1,117 @@
+﻿Upteky Solution Pvt. Ltd.
+
+SDE Intern Task: Feedback Dashboard
+
+Objective:
+
+Build and deploy a full-stack Feedback Management Dashboard that allows users to submit
+
+feedback, view feedbacks, and analyze basic insights such as positive vs. negative ratings.
+
+This task will test your full-stack understanding - frontend, backend, database, and deployment -
+
+within a 2-hour window.
+
+Requirements:
+
+Frontend:
+
+- Create a Feedback Form with fields: Name, Email, Message, and Rating (1-5)
+
+- On submit, send data to backend API
+
+- Display all feedbacks in a table (Name, Email, Rating, Message, CreatedAt)
+
+- Add analytics cards: total feedbacks, average rating, positive (4+) vs negative (<3)
+
+Backend:
+
+- Build an Express.js API with:
+
+  - POST /api/feedback -> Add feedback
+
+  - GET /api/feedback -> Fetch all feedback
+
+  - (Optional) GET /api/stats -> Return analytics data (avg rating, total count)
+
+- Include validation for empty name/message
+
+Database:
+
+- Use SQLite, MySQL, or MongoDB
+
+- Table/Collection: feedbacks
+
+  - id (primary key)
+
+  - name (string)
+
+  - email (string)
+
+  - message (text)
+
+
+
+  - rating (integer)
+
+  - createdAt (datetime)
+
+Deployment:
+
+- Frontend -> Vercel / Netlify
+
+- Backend -> Render / Railway / Cyclic
+
+- DB -> SQLite (local) or hosted (Mongo Atlas / Render MySQL)
+
+Evaluation Criteria:
+
+Functionality: 30% - Meets all basic requirements
+
+Code Quality: 20% - Clean, structured, and readable code
+
+API Logic: 15% - Correct REST API implementation
+
+Frontend Integration: 15% - UI communicates properly with backend
+
+Database Usage: 10% - Persistent data and correct schema
+
+Deployment: 10% - Working live demo
+
+Submission Format:
+
+- GitHub Repository link (with code for frontend & backend)
+
+- Live URLs (Frontend + Backend)
+
+- Optional: Screenshots or short Loom video demo
+
+Duration: 2 Hours
+
+Bonus (Optional):
+
+- Search/filter by rating
+
+- Export feedbacks to CSV
+
+- Basic authentication for dashboard
+
+Example Stack:
+
+Frontend: React (Vercel)
+
+Backend: Node.js + Express (Render)
+
+Database: SQLite / MongoDB
+
+
+
+Example Deliverable:
+
+Frontend: feedback-dashboard.vercel.app
+
+Backend: feedback-api.onrender.com
+
+Database: SQLite (stored in repo)
+
+Good luck, and happy building!
