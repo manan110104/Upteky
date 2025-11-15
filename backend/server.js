@@ -48,6 +48,20 @@ const validateFeedback = [
 
 // Routes
 
+// Root route
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'Feedback Dashboard API',
+    status: 'OK',
+    endpoints: {
+      health: '/api/health',
+      feedback: '/api/feedback',
+      stats: '/api/stats',
+      export: '/api/feedback/export'
+    }
+  });
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is running' });

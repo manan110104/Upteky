@@ -5,7 +5,8 @@ import AnalyticsCards from './components/AnalyticsCards'
 import { fetchFeedbacks, fetchStats } from './services/api'
 import './App.css'
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+// Get API URL for CSV export (full URL needed for download)
+const API_BASE_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000' : '')
 
 function App() {
   const [feedbacks, setFeedbacks] = useState([])
